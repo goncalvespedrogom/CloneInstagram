@@ -1,0 +1,245 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #fafafa;             /* COR DE FUNDO DA PÁGINA */
+}
+
+/* CONTAINERS */
+#main-container{
+    display: flex;           /* COLOCANDO O DISPLAY FLEX FICA UM ELEMENTO AO LADO DO OUTRO */
+    margin-top: 30px;        /* DISTANCIANDO OS ITENS DO TOPO DA PÁGINA */
+}
+
+#banner-container,
+#form-container{
+    flex: 1 1 0;             /* VALOR DE ZERO PARA NÃO TER BASIS */
+    width: 50%;              /* DESSA FORMA OS ELEMENTOS VÃO RESPEITAR UMA LARGURA DE 50% */
+}
+
+#banner-container{
+    text-align: right;        /* TEXT ALIGN = ALINHANDO TODO O TEXTO E IMAGENS A DIREITA DA PÁGINA */
+}
+
+#banner-container img{
+    width: 100%;              /* ADEQUANDO O BANNER A OCUPAR TODA A LARGURA DA DIV */
+    margin-right: 15px;       /* MARGEM A DIREITA */
+    margin-top: 25px;         /* MARGEM EM RELAÇÃO AO TOPO */
+    max-width: 380px;         /* COLOCANDO UMA LARGURA MÁXIMA (VAI SER 100% MAS ATÉ O LIMITE DE 380px) */
+}
+
+#form-container{
+    text-align: center;        /* CENTRALIZANDO O TEXTO DO FORMULÁRIO/LOGIN/CADASTRO */
+}
+
+/* FORMULÁRIO DE LOGIN */
+#form-box{                     /* FORMULÁRIO DE LOGIN/CADASTRO, ETC... */
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-instagram{               /* AJUSTANDO O TAMANHO E MARGEM DA LOGO DO INSTAGRAM */
+    width: 175px; 
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#login-form{
+    margin-top: 20px;
+}
+
+#login-form input{
+    display: block;             /* COM ESSE DISPLAY BLOCK CADA UM FICA EM UMA LINHA */
+    font-size: 12px;            /* TAMANHO DA FONTE */
+    padding: 12px 9px;          /* ESPAÇAMENTO INTERNO DOS ELEMENTOS */
+    background-color: #fafafa;  /* COR DE FUNDO DOS ELEMENTOS PARA CONTRASTAR COM O BRANCO */
+    border: 1px solid #dbdbdb;  /* BORDA DOS INPUTS */
+    border-radius: 3px;         /* DEIXANDO A BORDA ARREDONDADA DOS INPUTS */
+    width: 268px;               /* TAMANHO DOS INPUTS */
+    margin: 5px auto;           /* MARGEM ENTRE ELES E O AUTO PARA CENTRALIZAR OS INPUTS CONFORME O CONTAINER*/
+}
+
+#login-form input[type="submit"]{        /* AQUI AS REGRAS SÃO APLICADAS PARA ESTE TIPO DE INPUT */
+    background-color: #b2dffc;         /* ALTERANDO A COR DO BOTÃO DE LOGIN */
+    color: #fff;                       /* COR DO TEXTO DO BOTÃO DE LOGIN */
+    margin-top: 15px;                    /* MARGIN EM RELAÇÃO AO ITEM QUE ESTÁ EM CIMA */
+    border-radius: 5px;                  /* ARREDONDANDO A BORDA DO BOTÃO DE LOGIN */
+    height: 30px;                        /* ALTURA DO BOTÃO */
+    font-size: 13px;                     /* TAMANHO DO TEXTO */
+    padding: 0;                          /* CENTRALIZA O TEXTO DENTRO DO BOTÃO */
+    font-weight: bold;                   /* TEXTO FICA EM NEGRITO */
+}
+
+/* SEPARADOR (OU EMBAIXO DO FORMULÁRIO DE LOGIN) */
+.separator{
+    position: relative;                  /* COLOQUEI ELA COM POSIÇÃO RELATIVA POIS TEREMOS OUTROS ELEMENTOS COM POSIÇÃO ABSOLUTA NESTA DIV */
+}
+
+.line{                                   /* LINHA QUE SEPARA O LOGIN COM O LOGIN DO FACEBOOK */
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span{                         /* AQUI SÃO OS ESTILOS DA PALAVRA "OU" QUE SEPARA OS DOIS TIPOS DE LOGIN */
+    position: absolute;                  /* POSIÇÃO ABSOLUTA INDEPENDENTE DO SEPARATOR GERAL */
+    text-transform: uppercase;           /* TEXTO EM MAIUSCULO */
+    color: #bbb;    
+    background-color: #fff;             
+    top: -6px;                           /* PUXANDO PRA CIMA E FAZENDO COM QUE FIQUE EM CIMA DA LINHA */
+    width: 50px;                         /* LARGURA DO ITEM */
+    margin-left: -25px; /* IMPORTANTE: QUANDO FOR ALINHAR AO CENTRO UM ELEMENTO ABSOLUTE BASTA COLOCAR METADE DO VALOR DE LARGURA DELE NEGATIVO */
+    font-size: 14px;
+}
+
+/* LOGIN COM FACEBOOK */
+#facebook-login{
+    margin-bottom: 25px;
+}
+
+
+#facebook-login a{
+    text-decoration: none;      /* TIRANDO O SUBLINHADO E COR DE LINK  */
+    color: #385185;
+    display: flex;              /* DISPLAY FLEX PARA FICAR UM DO LADO DO OUTRO */
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login img{
+    width: 16px;                /* LARGURA */
+    height: 16px;               /* ALTURA */
+    margin-right: 8px;          /* AFASTANDO A IMAGEM DO TEXTO DO FACEBOOK */
+}
+
+#facebook-login span{           /* TEXTO DO "ENTRAR COM O FACEBOOK" */
+    font-weight: bold;          /* TEXTO EM NEGRITO */
+    font-size: 13px;            /* TAMANHO DO TEXTO */
+    margin-top: 1px;            /* DISTANCIANDO O TEXTO DA PARTE DE CIMA */
+}
+
+/* ESQUECEU A SENHA */
+#forgot-pass {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+#forgot-pass a {
+    text-decoration: none;      /* TIRANDO O SUBLINHADO E COR DE LINK  */
+    color: #373799;
+}
+
+/* REGISTRAR NOVA CONTA */
+#register-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+  }
+  
+#register-container p {
+    font-size: 14px;
+    color: #262626;
+}
+  
+#register-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* GET APP / BAIXAR O APP */
+#get-app-container{
+    text-align: center;         /* CENTRALIZANDO OS ITENS */
+    width: 350px;
+} 
+    
+#get-app-container p{           /* TEXTO DO GET APP */
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#get-app-container a{
+    text-decoration: none;      /* TIRAR O O SUBLINHADO DO LINK PQ SE NÃO VAI FICAR UMA LINHA ENTRE AS DUAS IMAGENS */
+}
+
+#get-app-container img{         /* IMAGENS DO GET APP (APPLE STORE E GOOGLE PLAY) */
+    width: 136px;
+    height: 40px;
+}
+
+/* FOOTER / RODAPÉ */
+footer{
+    text-align: left;
+    width: 1000px;              /* LARGURA DO FOOTER */
+    margin: 50px auto;          /* AUTO NAS LATERIAS CENTRALIZA OS ITENS NO MEIO DA TELA */
+    display: flex;              /* DEIXA OS ITENS UM DO LADO DO OUTRO */
+    flex-direction: column;     /* MANTÉM O COPYRIGHT EMBAIXO E A LISTA EM CIMA */
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer-links{
+    display: flex;              /* UM ITEM AO LADO DO OUTRO */
+    list-style: none;           /* TIRA A BOLINHA DOS ITENS DE LISTA */
+}
+
+#footer-links li{
+    margin-right: 10px;         /* ESTA MARGEM SERVE PARA AFASTAR UM ITEM DO OUTRO E NÃO FICAREM COLADOS */
+}
+
+#footer-links a,
+#copyright{
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+#copyright{
+    margin-top: 10px;
+}
+
+/* MOBILE / RESPONSIVIDADE */
+@media(max-width: 930px){
+    body{
+        background-color: #fff;         /* COR DE FUNDO */
+    }
+
+    #banner-container{
+        display: none;
+    }
+
+    #main-container,
+    #form-box{
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        width: 100%;            /* OCUPAR TODO O ESPAÇO DA TELA */
+        border: none;           /* SEM LINHA DE SEPARAÇÃO ENTRE AS DIVS */
+    }
+
+    footer{
+        width: 90%;             /* FOOTER OCUPA APENAS 90% DA TELA */
+    }
+
+    #footer-links{
+        flex-wrap: wrap;        /* NÃO CORTAR AS PALAVRAS/ITENS DO FOOTER */
+        justify-content: center;        /* ALINHAS OS ITENS DO FOOTER AO CENTRO DA TELA */
+    }
+
+    #footer-links{
+    margin-bottom: 10px;
+    }
+}
