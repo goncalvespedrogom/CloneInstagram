@@ -7,45 +7,45 @@
 }
 
 body{
-    background-color: #fafafa;             /* COR DE FUNDO DA PÁGINA */
+    background-color: #fafafa;             
 }
 
 /* CONTAINERS */
 #main-container{
-    display: flex;           /* COLOCANDO O DISPLAY FLEX FICA UM ELEMENTO AO LADO DO OUTRO */
-    margin-top: 30px;        /* DISTANCIANDO OS ITENS DO TOPO DA PÁGINA */
+    display: flex;           
+    margin-top: 7rem;        
 }
 
 #banner-container,
 #form-container{
-    flex: 1 1 0;             /* VALOR DE ZERO PARA NÃO TER BASIS */
-    width: 50%;              /* DESSA FORMA OS ELEMENTOS VÃO RESPEITAR UMA LARGURA DE 50% */
+    flex: 1 1 0;             
+    width: 50%;              
 }
 
 #banner-container{
-    text-align: right;        /* TEXT ALIGN = ALINHANDO TODO O TEXTO E IMAGENS A DIREITA DA PÁGINA */
+    text-align: right;        
 }
 
 #banner-container img{
-    width: 100%;              /* ADEQUANDO O BANNER A OCUPAR TODA A LARGURA DA DIV */
-    margin-right: 15px;       /* MARGEM A DIREITA */
-    margin-top: 25px;         /* MARGEM EM RELAÇÃO AO TOPO */
-    max-width: 380px;         /* COLOCANDO UMA LARGURA MÁXIMA (VAI SER 100% MAS ATÉ O LIMITE DE 380px) */
+    width: 100%;              
+    margin-right: 15px;       
+    margin-top: 25px;         
+    max-width: 380px;         
 }
 
 #form-container{
-    text-align: center;        /* CENTRALIZANDO O TEXTO DO FORMULÁRIO/LOGIN/CADASTRO */
+    text-align: center;        
 }
 
 /* FORMULÁRIO DE LOGIN */
-#form-box{                     /* FORMULÁRIO DE LOGIN/CADASTRO, ETC... */
+#form-box{                    
     background-color: #fff;
     border: 1px solid #dbdbdb;
     width: 350px;
     margin-top: 30px;
 }
 
-#logo-instagram{               /* AJUSTANDO O TAMANHO E MARGEM DA LOGO DO INSTAGRAM */
+#logo-instagram{              
     width: 175px; 
     height: 51px;
     margin: 30px auto 12px;
@@ -56,46 +56,46 @@ body{
 }
 
 #login-form input{
-    display: block;             /* COM ESSE DISPLAY BLOCK CADA UM FICA EM UMA LINHA */
-    font-size: 12px;            /* TAMANHO DA FONTE */
-    padding: 12px 9px;          /* ESPAÇAMENTO INTERNO DOS ELEMENTOS */
-    background-color: #fafafa;  /* COR DE FUNDO DOS ELEMENTOS PARA CONTRASTAR COM O BRANCO */
-    border: 1px solid #dbdbdb;  /* BORDA DOS INPUTS */
-    border-radius: 3px;         /* DEIXANDO A BORDA ARREDONDADA DOS INPUTS */
-    width: 268px;               /* TAMANHO DOS INPUTS */
-    margin: 5px auto;           /* MARGEM ENTRE ELES E O AUTO PARA CENTRALIZAR OS INPUTS CONFORME O CONTAINER*/
+    display: block;       
+    font-size: 12px;        
+    padding: 12px 9px;          
+    background-color: #fafafa; 
+    border: 1px solid #dbdbdb;  
+    border-radius: 3px;     
+    width: 268px;             
+    margin: 5px auto;          
 }
 
-#login-form input[type="submit"]{        /* AQUI AS REGRAS SÃO APLICADAS PARA ESTE TIPO DE INPUT */
-    background-color: #b2dffc;         /* ALTERANDO A COR DO BOTÃO DE LOGIN */
-    color: #fff;                       /* COR DO TEXTO DO BOTÃO DE LOGIN */
-    margin-top: 15px;                    /* MARGIN EM RELAÇÃO AO ITEM QUE ESTÁ EM CIMA */
-    border-radius: 5px;                  /* ARREDONDANDO A BORDA DO BOTÃO DE LOGIN */
-    height: 30px;                        /* ALTURA DO BOTÃO */
-    font-size: 13px;                     /* TAMANHO DO TEXTO */
-    padding: 0;                          /* CENTRALIZA O TEXTO DENTRO DO BOTÃO */
-    font-weight: bold;                   /* TEXTO FICA EM NEGRITO */
+#login-form input[type="submit"]{       
+    background-color: #b2dffc;        
+    color: #fff;                     
+    margin-top: 15px;                 
+    border-radius: 5px;              
+    height: 30px;                    
+    font-size: 13px;               
+    padding: 0;                      
+    font-weight: bold;             
 }
 
-/* SEPARADOR (OU EMBAIXO DO FORMULÁRIO DE LOGIN) */
+
 .separator{
-    position: relative;                  /* COLOQUEI ELA COM POSIÇÃO RELATIVA POIS TEREMOS OUTROS ELEMENTOS COM POSIÇÃO ABSOLUTA NESTA DIV */
+    position: relative;             
 }
 
-.line{                                   /* LINHA QUE SEPARA O LOGIN COM O LOGIN DO FACEBOOK */
+.line{                                 
     border-top: 1px solid #dbdbdb;
     width: 268px;
     margin: 25px auto 35px;
 }
 
-.separator span{                         /* AQUI SÃO OS ESTILOS DA PALAVRA "OU" QUE SEPARA OS DOIS TIPOS DE LOGIN */
-    position: absolute;                  /* POSIÇÃO ABSOLUTA INDEPENDENTE DO SEPARATOR GERAL */
-    text-transform: uppercase;           /* TEXTO EM MAIUSCULO */
+.separator span{                     
+    position: absolute;                
+    text-transform: uppercase;     
     color: #bbb;    
     background-color: #fff;             
-    top: -6px;                           /* PUXANDO PRA CIMA E FAZENDO COM QUE FIQUE EM CIMA DA LINHA */
-    width: 50px;                         /* LARGURA DO ITEM */
-    margin-left: -25px; /* IMPORTANTE: QUANDO FOR ALINHAR AO CENTRO UM ELEMENTO ABSOLUTE BASTA COLOCAR METADE DO VALOR DE LARGURA DELE NEGATIVO */
+    top: -6px;                          
+    width: 50px;                    
+    margin-left: -25px; 
     font-size: 14px;
 }
 
@@ -106,23 +106,23 @@ body{
 
 
 #facebook-login a{
-    text-decoration: none;      /* TIRANDO O SUBLINHADO E COR DE LINK  */
+    text-decoration: none;     
     color: #385185;
-    display: flex;              /* DISPLAY FLEX PARA FICAR UM DO LADO DO OUTRO */
+    display: flex;           
     align-items: center;
     justify-content: center;
 }
 
 #facebook-login img{
-    width: 16px;                /* LARGURA */
-    height: 16px;               /* ALTURA */
-    margin-right: 8px;          /* AFASTANDO A IMAGEM DO TEXTO DO FACEBOOK */
+    width: 16px;            
+    height: 16px;   
+    margin-right: 8px;      
 }
 
-#facebook-login span{           /* TEXTO DO "ENTRAR COM O FACEBOOK" */
-    font-weight: bold;          /* TEXTO EM NEGRITO */
-    font-size: 13px;            /* TAMANHO DO TEXTO */
-    margin-top: 1px;            /* DISTANCIANDO O TEXTO DA PARTE DE CIMA */
+#facebook-login span{   
+    font-weight: bold;
+    font-size: 13px;      
+    margin-top: 1px;         
 }
 
 /* ESQUECEU A SENHA */
@@ -132,7 +132,7 @@ body{
   }
 
 #forgot-pass a {
-    text-decoration: none;      /* TIRANDO O SUBLINHADO E COR DE LINK  */
+    text-decoration: none;   
     color: #373799;
 }
 
@@ -158,20 +158,20 @@ body{
 
 /* GET APP / BAIXAR O APP */
 #get-app-container{
-    text-align: center;         /* CENTRALIZANDO OS ITENS */
+    text-align: center;       
     width: 350px;
 } 
     
-#get-app-container p{           /* TEXTO DO GET APP */
+#get-app-container p{       
     margin: 20px 0;
     font-size: 13px;
 }
 
 #get-app-container a{
-    text-decoration: none;      /* TIRAR O O SUBLINHADO DO LINK PQ SE NÃO VAI FICAR UMA LINHA ENTRE AS DUAS IMAGENS */
+    text-decoration: none;     
 }
 
-#get-app-container img{         /* IMAGENS DO GET APP (APPLE STORE E GOOGLE PLAY) */
+#get-app-container img{       
     width: 136px;
     height: 40px;
 }
@@ -179,21 +179,24 @@ body{
 /* FOOTER / RODAPÉ */
 footer{
     text-align: left;
-    width: 1000px;              /* LARGURA DO FOOTER */
-    margin: 50px auto;          /* AUTO NAS LATERIAS CENTRALIZA OS ITENS NO MEIO DA TELA */
-    display: flex;              /* DEIXA OS ITENS UM DO LADO DO OUTRO */
-    flex-direction: column;     /* MANTÉM O COPYRIGHT EMBAIXO E A LISTA EM CIMA */
+    width: 1000px;        
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: flex;          
+    flex-direction: column;   
     justify-content: center;
     align-items: center;
 }
 
 footer #footer-links{
-    display: flex;              /* UM ITEM AO LADO DO OUTRO */
-    list-style: none;           /* TIRA A BOLINHA DOS ITENS DE LISTA */
+    display: flex;             
+    list-style: none;        
 }
 
 #footer-links li{
-    margin-right: 10px;         /* ESTA MARGEM SERVE PARA AFASTAR UM ITEM DO OUTRO E NÃO FICAREM COLADOS */
+    margin-right: 10px;         
 }
 
 #footer-links a,
@@ -210,7 +213,7 @@ footer #footer-links{
 /* MOBILE / RESPONSIVIDADE */
 @media(max-width: 930px){
     body{
-        background-color: #fff;         /* COR DE FUNDO */
+        background-color: #fff;       
     }
 
     #banner-container{
@@ -226,17 +229,18 @@ footer #footer-links{
     #form-box,
     #register-container,
     #get-app-container{
-        width: 100%;            /* OCUPAR TODO O ESPAÇO DA TELA */
-        border: none;           /* SEM LINHA DE SEPARAÇÃO ENTRE AS DIVS */
+        width: 100%;          
+        border: none;     
     }
 
     footer{
-        width: 90%;             /* FOOTER OCUPA APENAS 90% DA TELA */
+        width: 90%;
+        margin-top: 50px;  
     }
 
     #footer-links{
-        flex-wrap: wrap;        /* NÃO CORTAR AS PALAVRAS/ITENS DO FOOTER */
-        justify-content: center;        /* ALINHAS OS ITENS DO FOOTER AO CENTRO DA TELA */
+        flex-wrap: wrap;  
+        justify-content: center;       
     }
 
     #footer-links{
